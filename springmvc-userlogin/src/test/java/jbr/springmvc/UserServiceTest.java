@@ -13,18 +13,18 @@ import jbr.springmvc.model.Login;
 import jbr.springmvc.model.User;
 import jbr.springmvc.service.UserService;
 
-@ContextConfiguration(locations = { "classpath:jbr/config/user-beans.xml" })
-@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(locations = { "classpath:jbr/config/user-beans.xml" })
+//@RunWith(SpringJUnit4ClassRunner.class)
 public class UserServiceTest {
 
-  @Autowired
+ /*  @Autowired
   UserService userService;
 
   @Before
   public void setUp() throws Exception {
   }
 
- /* @Test
+ @Test
   public void testValidateUser() {
 
     Login login = new Login();
