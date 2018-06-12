@@ -15,6 +15,7 @@ public class User {
   }
 
   public void setUsername(String username) {
+    System.out.println("username: " + username);
     this.username = username;
   }
 
