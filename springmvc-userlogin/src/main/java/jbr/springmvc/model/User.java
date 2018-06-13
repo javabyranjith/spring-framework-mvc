@@ -41,6 +41,7 @@ public class User {
   }
 
   public void setLastname(String lastname) {
+    System.out.println("lastname: " + lastname);
     this.lastname = lastname;
   }
 
