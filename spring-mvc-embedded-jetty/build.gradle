@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'jetty'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+task wrapper(type: Wrapper){
+         gradleVersion = '3.5'
+     }
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+	compile 'org.springframework:spring-webmvc:5.0.7.RELEASE'
+	compile 'javax.servlet:javax.servlet-api:3.1.0'
+    testImplementation 'junit:junit:4.12'
+}
+
+jettyRun{
+	contextPath = "spring-jetty"
+	httpPort = 9090
+}
+
+jettyRunWar{
+	contextPath = "spring-jetty"
+	httpPort = 9090
+}
+
+eclipse {
+  wtp {
+    component {
+      contextPath = 'spring-jetty-wtp'
+    }
+  }
+}
+
