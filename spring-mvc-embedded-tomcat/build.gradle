@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'com.bmuschko.tomcat'
+
+war {
+    baseName = 'spring-mvc-embedded-tomcat'
+    version = '1.0'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-webmvc:5.0.7.RELEASE'
+    compile 'javax.servlet:javax.servlet-api:4.0.1'
+    testImplementation 'junit:junit:4.12'
+}
+
+tomcat {
+    httpPort = 8090
+}
+
+buildscript {
+    repositories {
+        jcenter();
+    }
+
+    dependencies {
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.4.2'
+    }
+}
