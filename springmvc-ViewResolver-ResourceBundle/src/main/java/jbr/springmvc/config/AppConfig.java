@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.ResourceBundleViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "jbr.spring5mvc" })
+@ComponentScan(basePackages = { "jbr.springmvc" })
 public class AppConfig implements WebMvcConfigurer {
 
 	@Bean

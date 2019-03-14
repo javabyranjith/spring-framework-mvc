@@ -9,6 +9,7 @@ public class HomeController {
 
   @GetMapping("user")
   public String user(Model model) {
+    System.out.println("user method");
     model.addAttribute("message", "User Page");
 
     return "user";
