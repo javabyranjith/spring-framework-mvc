@@ -1,0 +1,7 @@
+.project
+.classpath
+.gradle/
+.settings/
+/bin/
+/target/
+**/META-INF/**
