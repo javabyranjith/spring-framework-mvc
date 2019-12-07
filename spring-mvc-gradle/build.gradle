@@ -5,8 +5,11 @@ plugins {
     id 'war'
 }
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 war {
-    baseName = 'spring-mvc-gradle-example'
+    baseName = 'spring-mvc-gradle'
     version = '1.0'
 }
 
@@ -25,7 +28,7 @@ dependencies {
 eclipse {
   wtp {
     component {
-      contextPath = 'spring-mvc-wtp'
+      contextPath = 'spring-mvc-gradle'
     }
   }
 }
