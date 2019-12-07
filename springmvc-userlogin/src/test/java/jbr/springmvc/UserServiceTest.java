@@ -1,8 +1,6 @@
 package jbr.springmvc;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Before;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,27 +11,36 @@ import jbr.springmvc.model.Login;
 import jbr.springmvc.model.User;
 import jbr.springmvc.service.UserService;
 
-//@ContextConfiguration(locations = { "classpath:jbr/config/user-beans.xml" })
-//@RunWith(SpringJUnit4ClassRunner.class)
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = { "classpath:jbr/config/user-beans.xml" })
 public class UserServiceTest {
 
- /*  @Autowired
-  UserService userService;
+  @Autowired
+  private UserService userService;
 
-  @Before
-  public void setUp() throws Exception {
+  @Test
+  public void testRegister() {
+    User user = new User();
+    user.setUsername("ranjith");
+    user.setPassword("sekar");
+    user.setFirstname("Ranjith");
+    user.setLastname("Sekar");
+    user.setAddress("chennai, t.nagar");
+    user.setEmail("ranjith@gmail.com");
+    user.setPhone(222);
+
+    int result = userService.register(user);
+    Assert.assertEquals(1, result);
   }
 
- @Test
+  @Test
   public void testValidateUser() {
-
     Login login = new Login();
     login.setUsername("ranjith");
     login.setPassword("sekar");
 
     User user = userService.validateUser(login);
-
-    assertEquals("Ranjith", user.getFirstname());
-  }*/
+    Assert.assertEquals("Ranjith", user.getFirstname());
+  }
 
 }

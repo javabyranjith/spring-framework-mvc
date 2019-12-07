@@ -11,8 +11,8 @@ public class UserServiceImpl implements UserService {
   @Autowired
   public UserDao userDao;
 
-  public void register(User user) {
-    userDao.register(user);
+  public int register(User user) {
+    return userDao.register(user);
   }
 
   public User validateUser(Login login) {
