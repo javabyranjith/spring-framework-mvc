@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="1.5.0">
-	<wb-module deploy-name="springmvc-ViewResolver-Xml">
-		<property name="context-root" value="springmvc-ViewResolver-XmlViewResolver"/>
-		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
-	</wb-module>
-</project-modules>
