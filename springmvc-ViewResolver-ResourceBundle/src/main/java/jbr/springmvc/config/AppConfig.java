@@ -15,20 +15,20 @@ import org.springframework.web.servlet.view.ResourceBundleViewResolver;
 @ComponentScan(basePackages = { "jbr.springmvc" })
 public class AppConfig implements WebMvcConfigurer {
 
-	@Bean
-	public ViewResolver viewResolver() {
-		ResourceBundleViewResolver viewResolver = new ResourceBundleViewResolver();
-		viewResolver.setBasename("views");
-		
-		return viewResolver;
-	}
+  @Bean
+  public ViewResolver viewResolver() {
+    ResourceBundleViewResolver viewResolver = new ResourceBundleViewResolver();
+    viewResolver.setBasename("views");
 
-	@Bean
-	public MessageSource messageSource() {
-		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-		messageSource.setBasename("messages");
+    return viewResolver;
+  }
 
-		return messageSource;
-	}
+  @Bean
+  public MessageSource messageSource() {
+    ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
+    messageSource.setBasename("messages");
+
+    return messageSource;
+  }
 
 }
