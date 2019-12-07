@@ -8,5 +8,5 @@
 
 
 ## HOW TO RUN?
-http://localhost:8080/springmvc-ViewResolver-XmlViewResolver/product
-http://localhost:8080/springmvc-ViewResolver-XmlViewResolver/user
+1. http://localhost:8080/springmvc-ViewResolver-XmlViewResolver/product
+2. http://localhost:8080/springmvc-ViewResolver-XmlViewResolver/user
