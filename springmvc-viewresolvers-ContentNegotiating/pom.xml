@@ -26,7 +26,7 @@
 		<servlet.api.version>3.1.0</servlet.api.version>
 		<jsp.api.version>2.3.1</jsp.api.version>
 
-		<jackson.version>2.9.4</jackson.version>
+		<jackson.version>2.10.2</jackson.version>
 		<apach.poi.version>4.0.1</apach.poi.version>
 	</properties>
 
