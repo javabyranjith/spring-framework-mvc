@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+
+war {
+    baseName = 'springmvc-collections'
+    version = '1.0'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-webmvc:5.1.0.RELEASE'
+	compile 'org.projectlombok:lombok:1.18.12'
+    
+    compile 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1'
+    compile 'taglibs:standard:1.1.2'
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.1'
+    
+    compile 'junit:junit:4.12'
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
