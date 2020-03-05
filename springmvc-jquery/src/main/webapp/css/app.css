@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto;
+    width: 500px;
+}
+  
+.mainDiv {
+    font-family: Verdana;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 5px;
+    color: red;
+}
+  
+.expandableCollapsibleDiv img {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+    float: left;
+}
+  
+.expandableCollapsibleDiv ul {
+    border-bottom: 1px solid #000;
+    clear: both;
+    list-style: outside none none;
+    margin: 0;
+    padding-bottom: 10px;
+    display: none;
+}
